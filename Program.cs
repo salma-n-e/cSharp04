@@ -29,8 +29,11 @@
             AddBonusPages(pages);
             Console.WriteLine($"Q5 - Pages: {pages}");
 
+            //6
 
-
+            double[] myPrices = { 25.5, 40.0 };
+            ApplyDiscount(myPrices);
+            Console.WriteLine($"Q6 - Prices[0]: {myPrices[0]}");
 
 
 
@@ -62,6 +65,14 @@
             static void AddBonusPages(int pages)
             {
                 pages += 50;
+            }
+
+
+            //6 Method
+
+            static void ApplyDiscount(double[] prices)
+            {
+                prices[0] -= 5;
             }
         }
     }
