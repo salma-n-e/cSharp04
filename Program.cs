@@ -24,8 +24,10 @@
             Console.Write("Q4 - ");
             PrintBookTitle("Clean Code");
 
-
-
+            //5
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine($"Q5 - Pages: {pages}");
 
 
 
@@ -53,6 +55,13 @@
             static void PrintBookTitle(string title)
             {
                 Console.WriteLine("Book title: " + title);
+            }
+
+            //5 Method
+
+            static void AddBonusPages(int pages)
+            {
+                pages += 50;
             }
         }
     }
