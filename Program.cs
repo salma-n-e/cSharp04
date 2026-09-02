@@ -20,8 +20,9 @@
             Console.Write("Q3 - ");
             PrintWelcomeMessage();
 
-
-
+            //4 
+            Console.Write("Q4 - ");
+            PrintBookTitle("Clean Code");
 
 
 
@@ -45,6 +46,13 @@
             static void PrintWelcomeMessage()
             {
                 Console.WriteLine("Welcome to the Library!");
+            }
+
+            //4 Method
+
+            static void PrintBookTitle(string title)
+            {
+                Console.WriteLine("Book title: " + title);
             }
         }
     }
