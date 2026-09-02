@@ -15,6 +15,37 @@
                 { 1 , 4 },
             };
             Console.WriteLine($"Q2 - Shelf 1, Slot 0 copies: {shelfCopies[1, 0]}");
+
+            //3 
+            Console.Write("Q3 - ");
+            PrintWelcomeMessage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //3 Method
+
+            static void PrintWelcomeMessage()
+            {
+                Console.WriteLine("Welcome to the Library!");
+            }
         }
     }
 }
