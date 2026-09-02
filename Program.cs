@@ -35,9 +35,11 @@
             ApplyDiscount(myPrices);
             Console.WriteLine($"Q6 - Prices[0]: {myPrices[0]}");
 
+            //7 
 
-
-
+            int pagesRef = 400;
+            AddBonusPagesByRef(ref pagesRef);
+            Console.WriteLine($"Q7 - Pages by ref: {pagesRef}");
 
 
 
@@ -73,6 +75,13 @@
             static void ApplyDiscount(double[] prices)
             {
                 prices[0] -= 5;
+            }
+
+            //7 Method
+
+            static void AddBonusPagesByRef(ref int pages)
+            {
+                pages += 50;
             }
         }
     }
