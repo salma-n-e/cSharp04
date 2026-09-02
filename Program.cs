@@ -54,11 +54,14 @@
                 Console.WriteLine($"Q9 - Found price: {foundPrice}");
             }
 
+            //10
 
+            Console.Write("Q10 (Default) - ");
+            PrintBookInfo("C# Essentials");
+            Console.Write("Q10 (Provided) - ");
+            PrintBookInfo("C# Essentials", 500);
 
-
-
-
+          
 
             //3 Method
 
@@ -117,6 +120,17 @@
                 price = 0;
                 return false;
             }
+
+
+            //10 Method
+
+            static void PrintBookInfo(string title, int pages = 300)
+            {
+                Console.WriteLine($"Title: {title}, Pages: {pages}");
+            }
+
+            
+            
         }
     }
 }
