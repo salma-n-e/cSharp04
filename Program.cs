@@ -47,7 +47,12 @@
             ReplaceArray(ref arrayToReplace);
             Console.WriteLine($"Q8 - Array Length: {arrayToReplace.Length}");
 
+            //9
 
+            if (TryGetPrice("Clean Code", out double foundPrice))
+            {
+                Console.WriteLine($"Q9 - Found price: {foundPrice}");
+            }
 
 
 
@@ -98,6 +103,20 @@
                 prices = new double[] { 10.0, 12.5, 15.0 };
             }
 
+
+            //9 Method
+
+            static bool TryGetPrice(string title, out double price)
+            {
+                if (title == "Clean Code")
+                {
+                    price = 25.5;
+                    return true;
+                }
+
+                price = 0;
+                return false;
+            }
         }
     }
 }
