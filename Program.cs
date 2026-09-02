@@ -42,6 +42,13 @@
             Console.WriteLine($"Q7 - Pages by ref: {pagesRef}");
 
 
+            //8
+            double[] arrayToReplace = { 25.5, 40.0 };
+            ReplaceArray(ref arrayToReplace);
+            Console.WriteLine($"Q8 - Array Length: {arrayToReplace.Length}");
+
+
+
 
 
 
@@ -83,6 +90,14 @@
             {
                 pages += 50;
             }
+
+            //8 Method
+
+            static void ReplaceArray(ref double[] prices)
+            {
+                prices = new double[] { 10.0, 12.5, 15.0 };
+            }
+
         }
     }
 }
