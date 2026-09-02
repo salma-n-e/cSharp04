@@ -61,7 +61,11 @@
             Console.Write("Q10 (Provided) - ");
             PrintBookInfo("C# Essentials", 500);
 
-          
+
+            //11
+            Console.Write("Q11 - ");
+            PrintBookInfo(pages: 250, title: "Refactoring");
+
 
             //3 Method
 
@@ -129,8 +133,15 @@
                 Console.WriteLine($"Title: {title}, Pages: {pages}");
             }
 
-            
-            
+
+            //11 Method
+
+            static void PrintBookInfo1(string title, int pages = 300)
+            {
+                Console.WriteLine($"Title: {title}, Pages: {pages}");
+            }
+
+
         }
     }
 }
